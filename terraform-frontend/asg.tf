@@ -1,3 +1,3 @@
 module "asg" {
-  source = "https://github.com/SrimaanPenugonda/shell-scripting.git"
+  source = "https://github.com/SrimaanPenugonda/terraform-asg.git"
 }
