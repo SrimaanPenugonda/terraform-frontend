@@ -5,7 +5,7 @@ dev-init: ## Terraform init for DEV env
 	@terraform init -backend-config=backend/dev-state.tfvars -no-color
 
 dev-apply: ## Terraform Apply for DEV env
-	@terraform apply -var-file=env/dev.tfvars -auto-approve -no-color
+	@terraform apply -var-file=env/dev.tfvars -var-file=backend/dev-state.tfvars -auto-approve -no-color
 
 dev-destroy: ## Terraform Destroy for DEV env
 	@terraform destroy -var-file=env/dev.tfvars -auto-approve -no-color
