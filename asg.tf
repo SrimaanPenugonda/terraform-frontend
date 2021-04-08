@@ -4,7 +4,7 @@ module "asg" {
   ENV             = var.ENV
   INSTANCE_TYPE   = var.INSTANCE_TYPE
   bucket          = var.bucket //pass the bucket name to access the VPC state file
-} // calling other module(terraform-asg) as asg module also pass the variables to it
+} // calling other module(terraform-asg) as asg module also pass the variables to it.
 
 output "sample" {
   value = module.asg.sample  // using this module here
