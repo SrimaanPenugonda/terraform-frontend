@@ -5,6 +5,8 @@ module "asg" {
   INSTANCE_TYPE   = var.INSTANCE_TYPE
   bucket          = var.bucket //pass the bucket name to access the VPC state file
   region          = var.region
+  PORT            = 80
+  HEALTH          = "/"
 } // calling other module(terraform-asg) as asg module also pass the variables to it.
 
 output "sample" {
