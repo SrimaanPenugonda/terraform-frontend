@@ -8,7 +8,3 @@ module "asg" {
   PORT            = 80
   HEALTH          = "/"
 } // calling other module(terraform-asg) as asg module also pass the variables to it.
-
-output "sample" {
-  value = module.asg.sample  // using this module here
-}
