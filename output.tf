@@ -1,3 +1,3 @@
-output "FRONTEND_RG_ARN" {
+output "FRONTEND_TG_ARN" {
   value = module.asg.TG_ARN
 }
