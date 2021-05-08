@@ -1,5 +1,5 @@
 module "asg" {
-  source          = "git::https://github.com/SrimaanPenugonda/terraform-asg.git"
+  source          = "git::https://github.com/SrimaanPenugonda/terraform-asg.git" #shows error ignore
   COMPONENT       = var.COMPONENT
   ENV             = var.ENV
   INSTANCE_TYPE   = var.INSTANCE_TYPE
